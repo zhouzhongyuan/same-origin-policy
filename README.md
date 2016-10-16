@@ -48,9 +48,13 @@
 ## 跨域的方法
 
 
-
+## 相关概念
+- Cross-origin resource sharing (CORS)
+- Cross-site scripting (XSS)
+- Cross-site request forgery (CSRF)
 
 ## 参考
+[wiki](https://en.wikipedia.org/wiki/Same-origin_policy)
 
 [浏览器同源政策及其规避方法](http://www.ruanyifeng.com/blog/2016/04/same-origin-policy.html)
 
