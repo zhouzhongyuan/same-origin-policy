@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+</head>
+<body>
+<h1>这是blog.d.ev域名下的页面</h1>
+<div id="crossBlog"></div>
+<script>
+
+    function test(){
+        document.domain = "d.ev";
+        var win = document.getElementById('iframe').contentWindow;
+        var doc = win.document;//这里获取不到iframe里的document对象
+
+        // 获取子页面的元素
+        var crossFeed = doc.getElementById('crossFeed');
+        console.log(crossFeed);
+    }
+
+</script>
+<iframe id = "iframe" src="http://feed.d.ev" onload = "test()"></iframe>
+</body>
+</html>
